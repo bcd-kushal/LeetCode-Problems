@@ -1,2 +1,2 @@
-# Top-150-LeetCode
+# LeetCode-Questions
 🧩 personal leetcode solutions (over time ofc)
