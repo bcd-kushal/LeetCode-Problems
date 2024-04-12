@@ -10,7 +10,7 @@ This repository contains LeetCode question solutions in `C++`, `Python`, `TypeSc
 <hr>
 
 ## ⚖️ License
-
+ 
 This project is licensed under the MIT License - see the <a href=''>LICENSE</a> file for details, ***strictly not permitted for 3rd party use without consent***.
 
 <hr>
