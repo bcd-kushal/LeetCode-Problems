@@ -4,7 +4,7 @@ using namespace std;
 class Paranthesis {
 public:
     bool isValid(string s) {
-        stack<char> st;
+        stack<char> st; 
         int n = s.size();  
  
         for(int i=0; i<n; i++) { 
