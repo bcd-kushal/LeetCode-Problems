@@ -17,7 +17,7 @@ public:
                 if((c=='(' && s[i]==')') || (c=='{' && s[i]=='}') || (c=='[' && s[i]==']'))
                     st.pop();
                 else
-                    return false;
+                    return false; 
             }
         }
 
