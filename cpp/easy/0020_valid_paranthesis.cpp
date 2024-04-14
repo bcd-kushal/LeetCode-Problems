@@ -12,7 +12,7 @@ public:
                 st.push(s[i]); 
             else {
                 if(st.empty())   
-                    return false;  
+                    return false;   
                 char c = st.top(); 
                 if((c=='(' && s[i]==')') || (c=='{' && s[i]=='}') || (c=='[' && s[i]==']'))
                     st.pop();
