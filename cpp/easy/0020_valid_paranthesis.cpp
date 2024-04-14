@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 class Paranthesis {
 public:
     bool isValid(string s) {
