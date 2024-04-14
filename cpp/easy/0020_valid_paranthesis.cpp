@@ -24,7 +24,7 @@ public:
         return st.empty();
     }
 };
-
+ 
 int main() {
     string s = "(){[(()[]){}]()}";
     Paranthesis ob;
