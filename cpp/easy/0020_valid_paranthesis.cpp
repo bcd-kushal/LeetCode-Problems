@@ -23,7 +23,7 @@ public:
  
         return st.empty();
     }
-};
+}; 
  
 int main() {
     string s = "(){[(()[]){}]()}";
