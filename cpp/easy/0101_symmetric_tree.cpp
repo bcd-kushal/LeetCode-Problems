@@ -29,7 +29,7 @@ class Tree {
                 symmetricCheck(a->left,b->right, result);
             if(a->right) 
                 symmetricCheck(a->right,b->left, result);
-
+ 
             return nullptr;
         }
 
