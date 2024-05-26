@@ -51,7 +51,7 @@ int main() {
     Tree tree;
     
     auto start = chrono::steady_clock::now();
-    cout << tree.isSymmetric(head);
+    cout << tree.isSymmetric(head); 
     auto end = chrono::steady_clock::now();
 
     cout << "\n... time taken: " << chrono::duration_cast<chrono::milliseconds>(end-start).count() << "ms";
