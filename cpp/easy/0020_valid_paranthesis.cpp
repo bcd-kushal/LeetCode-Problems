@@ -27,7 +27,7 @@ public:
  
 int main() {
     string s = "(){[(()[]){}]()}";
-    Paranthesis ob;
+    Paranthesis ob; 
 
     auto start = chrono::steady_clock::now();
     cout << ob.isValid(s);
