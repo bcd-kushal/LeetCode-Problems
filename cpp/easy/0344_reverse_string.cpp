@@ -23,6 +23,6 @@ int main() {
 
     for(char ch: s) 
         cout << ch << ", ";
-    cout << "\n... time taken: " << chrono::duration_cast<chrono::milliseconds>(end-start).count() << "ms";
+    cout << "\n... time taken: " << chrono::duration_cast<chrono::milliseconds>(end-start).count() << "ms" ;
     return 0;
 }
