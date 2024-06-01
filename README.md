@@ -7,7 +7,7 @@
 
 This repository contains LeetCode question solutions in `C++`, `Python`, `TypeScript` and `Rust` 
 
-<hr>  
+<hr> 
 
 ## ⚖️ License
  
