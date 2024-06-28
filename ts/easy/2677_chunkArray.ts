@@ -8,7 +8,6 @@ function chunk(arr: Obj[], size: number): Obj[][] {
     if(size >= n) 
         return n==0 ? [] : [arr]
     
-    
     // if size < n ---------------------------
     let chunkArr: Obj[][] = []
     let subArr: Obj[] = []
