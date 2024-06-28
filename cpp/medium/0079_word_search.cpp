@@ -61,12 +61,8 @@ private:
             else
                 vector<pair<int,int>> authentic_coords = x.second;
         }
-        
-        
-        
-        
-        
     }
+
 public:
     
     
