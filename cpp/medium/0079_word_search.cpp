@@ -31,7 +31,6 @@ private:
             coords.push_back(new_pair(i,j-1));
         }
         
-        
         // bottom ---------------------------------\
         if(i+1<n && j-1>0 && board[i+1][j-1]==target){
             doesExist |= true;
@@ -45,8 +44,6 @@ private:
             doesExist |= true;
             coords.push_back(new_pair(i+1,j+1));
         }
-        
-        
         
         return new_pair(doesExist,coords);
     }
