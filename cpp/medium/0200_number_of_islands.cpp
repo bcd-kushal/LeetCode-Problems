@@ -62,10 +62,7 @@ class Islands {
                     }
                 }
 
-            
-
             return islands;
-
         }
 };
 
@@ -84,7 +81,6 @@ int main() {
     
     Islands isl;
     cout << isl.totalIslands(map) << " islands found.";
-
 
     //---------------------------------------------------------------
     auto end = chrono::steady_clock::now();
