@@ -58,13 +58,8 @@ private:
             // if no adjacent have target that means no path is there...
             if(!x.first)
                 return false
-            else {
+            else
                 vector<pair<int,int>> authentic_coords = x.second;
-                
-            }    
-            
-                
-            
         }
         
         
