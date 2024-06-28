@@ -20,6 +20,7 @@ private:
         
         return true;
     }
+
 public:
     int minDepth(TreeNode* root) {
         
@@ -61,23 +62,13 @@ public:
             
             min_nodes_depth = min(min_nodes_depth,local_total_nodes);
             local_total_nodes = 0;
-            
 
-            
             // update stack
             S.pop();
             
-            
             Visited.push_back(ptr);
-            
-            
-            
-            
         }
         
         return min_nodes_depth;
-        
-        
-        
     }
 };
