@@ -73,7 +73,6 @@ public:
         pair<int,int> curr_coord = new_pair(0,0);
         char curr_char_index = 0;
         
-        
         //find the first position where search will start --------
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
@@ -91,6 +90,5 @@ public:
         }
         
         return false;
-        
     }
 };
