@@ -64,7 +64,6 @@ private:
     }
 
 public:
-    
     bool exist(vector<vector<char>>& board, string word) {
         // initialization -----------
         int rows = sizeof(board)/sizeof(board[0]);
@@ -73,7 +72,6 @@ public:
         int word_size = word.size();
         pair<int,int> curr_coord = new_pair(0,0);
         char curr_char_index = 0;
-        
         
         
         //find the first position where search will start --------
