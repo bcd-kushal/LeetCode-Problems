@@ -46,7 +46,6 @@ private:
     }
     
 public:
-
     int latestDayToCross(int row, int col, vector<vector<int>>& cells) {
         int low = 0,high = cells.size();
         int last_day_to_cross = 0;
