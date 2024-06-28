@@ -20,7 +20,6 @@ private:
             doesExist |= true;
             coords.push_back(new_pair(i-1,j+1));
         }
-
         
         // side ways ---------------------------------\
         if(j+1<m && board[i][j+1]==target){
@@ -31,7 +30,6 @@ private:
             doesExist |= true;
             coords.push_back(new_pair(i,j-1));
         }
-        
         
         
         // bottom ---------------------------------\
