@@ -65,8 +65,6 @@ private:
 
 public:
     
-    
-    
     bool exist(vector<vector<char>>& board, string word) {
         // initialization -----------
         int rows = sizeof(board)/sizeof(board[0]);
