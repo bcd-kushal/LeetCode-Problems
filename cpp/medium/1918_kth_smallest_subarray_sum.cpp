@@ -5,15 +5,19 @@ class SubarraySums {
     private:
         int arrSum(vector<int> &arr) {
             if(!arr.size())     return 0;
+            
             int sum = 0;
             for(int i: arr)
                 sum += i;
+            
             return sum;
         }
+
     public:
         int kthSmallestSum(vector<int> &nums, int k) {
             unordered_map<int,vector<vector<int>>> map;
             int n = nums.size();
+            
             for(int pos=0; pos<n; pos++) {
                 for(int i=1;i<=n-pos;i++)
                     map[nums[pos]].push_back({nums[pos]});
@@ -24,7 +28,6 @@ class SubarraySums {
                     }
                 }
             }
-
 
         }
 };
