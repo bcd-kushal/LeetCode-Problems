@@ -5,6 +5,7 @@ class Solution {
     private:
         pair<int,int> getMaxCommonDuration(vector<int> &arr, int pos, vector<int>::iterator itr, vector<int>::iterator end) {
             int lb = pos, ub = INT_MIN;
+            
             while(pos<arr.size() && itr!=end && arr[pos]==*itr) {
                 ub = pos;
                 pos+=1;
@@ -30,10 +31,11 @@ class Solution {
                     for(auto j: map[nums2[num]]) {
                         if(max_common_length==min(nums1.size(),nums2.size()))
                             break;
+                        
                         auto p = getMaxCommonDuration(nums2,num,nums1.begin()+j,nums1.end());
-                        if(p.second-p.first>=0) {
+                        
+                        if(p.second-p.first>=0)
                             max_common_length = max(max_common_length, p.second-p.first+1);
-                        }
                     }
             }
 
