@@ -11,6 +11,7 @@ private:
         for(auto it = V.begin(); it!=V.end(); it++)
             if(*it==el)
                 return false;
+        
         return true;
     }
     
@@ -37,17 +38,14 @@ public:
             if(sc+1<rows && checkNotVisited(Visited,make_pair(sr,sc+1)) && image[sr][sc+1]==pixel_to_change)       Q.push(make_pair(sr,sc+1));
             if(sc-1>=0   && checkNotVisited(Visited,make_pair(sr,sc-1)) && image[sr][sc-1]==pixel_to_change)       Q.push(make_pair(sr,sc-1));
             
-            
             // color this position
             image[sr][sc] = color;
             
             // remove this pixel from Q
             Visited.push_back(Q.front());
             Q.pop();
-                      
         }
         
         return image;
-
     }
 };
