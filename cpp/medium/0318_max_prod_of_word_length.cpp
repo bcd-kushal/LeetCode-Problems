@@ -25,18 +25,18 @@ private:
     
     
 public:
-    
     int maxProduct(vector<string>& words) {
         int max_prod = INT_MIN;
         int n = words.size();
-        for(int i=0; i<n-1;i++) {
-            for(int j=i+1;j<n;j++) {
+        
+        for(int i=0; i<n-1;i++)
+            for(int j=i+1;j<n;j++)
                 if(!wordsCollide(words[i],words[j])) 
                     max_prod = max(max_prod,letterDistance(words[i],words[j]));
-            }
-        }
+
         if(INT_MIN==max_prod)
             return 0;
+        
         return max_prod;
     }
 };
