@@ -21,7 +21,6 @@ class Cards {
                 take_out = !take_out;
                 st.pop();
 
-
                 if(st.empty() && aux.size()>0) {    
                     cout << "\nYES" ;
                     for(int i=aux.size()-1; i>=0; i--)
@@ -32,8 +31,8 @@ class Cards {
             
             cout << "\nstack empty: " << st.empty() << endl;
 
-                    for(int i=aux.size()-1; i>=0; i--)
-                        cout << aux[i] << ",";
+            for(int i=aux.size()-1; i>=0; i--)
+                cout << aux[i] << ",";
 
             return resultant;
         }
