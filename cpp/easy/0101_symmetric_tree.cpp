@@ -13,9 +13,12 @@ struct TreeNode {
 class Tree {
     private:
         bool isNodeSymmetric(TreeNode *a, TreeNode *b) {
-            if(a->val != b->val)        return false;
+            if(a->val != b->val) 
+                return false;
+            
             if(!(a->left && b->right && a->left->val==b->right->val) && !(!a->left && !b->right))   return false;
             if(!(a->right && b->left && a->right->val==b->left->val) && !(!a->right && !b->left))   return false;
+            
             return true;
         }
 
@@ -24,7 +27,10 @@ class Tree {
                 result &= false;
                 return nullptr;
             }
-            if(!result)                     return nullptr;
+            
+            if(!result)                     
+                return nullptr;
+            
             if(a->left) 
                 symmetricCheck(a->left,b->right, result);
             if(a->right) 
@@ -35,9 +41,12 @@ class Tree {
 
     public:
         bool isSymmetric(TreeNode* root) {
-            if(!root)                       return true;
-            if(!root->left && !root->right) return true;
-            if((!root->left && root->right) || (root->left && !root->right)) return false;
+            if(!root)                       
+                return true;
+            if(!root->left && !root->right) 
+                return true;
+            if((!root->left && root->right) || (root->left && !root->right)) 
+                return false;
 
             bool ans = true;
             symmetricCheck(root->left,root->right,ans);
@@ -55,5 +64,6 @@ int main() {
     auto end = chrono::steady_clock::now();
 
     cout << "\n... time taken: " << chrono::duration_cast<chrono::milliseconds>(end-start).count() << "ms";
+    
     return 0;
 }
