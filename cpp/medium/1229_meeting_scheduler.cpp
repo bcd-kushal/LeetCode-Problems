@@ -7,6 +7,7 @@ class Meeting {
             if(a[1] < b[0] || b[1] < a[0])      return {};
             return { max(a[0],b[0]), min(a[1],b[1])};
         }
+
     public: 
         vector<int> scheduleMeeting(vector<vector<int>> &slot1, vector<vector<int>> &slot2, int &duration) {
             auto ptr1 = slot1.begin();
@@ -46,5 +47,6 @@ int main() {
     for(auto it: time)
         cout << it << "...";
     cout << "\n... time taken: " << chrono::duration_cast<chrono::milliseconds>(end-start).count() << "ms";
+    
     return 0;
 }
