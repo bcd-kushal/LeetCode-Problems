@@ -43,10 +43,6 @@ public:
             // update local variable
             int n = Q.front();
             
-            // traverse adjacent edges and keep in check the adjacent
-            // is neither:
-            //     1. already visited
-            //     1. already in queue
             for(auto adj: connections[n]) {
                 if(!isVisited(Visited,adj))
                     if(!isAlreadyInQueue(Q,adj))
@@ -61,11 +57,9 @@ public:
             // pop from queue and add to visited
             Visited.push_back(Q.front());
             Q.pop();
-            
         }
         
         return redundant_connection;
-        
     }
 };
 
@@ -80,5 +74,6 @@ int main() {
 
     cout << result[0] << ", " << result[1];
     cout << "\n... time taken: " << chrono::duration_cast<chrono::milliseconds>(end-start).count() << "ms" << endl;
+    
     return 0;
 }
