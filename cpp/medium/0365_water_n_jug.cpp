@@ -7,6 +7,7 @@ int gcd(int &a, int &b) {
         b = a % b;
         a = temp;
     }
+    
     return a;
 }
 
@@ -21,5 +22,6 @@ int main() {
     cout << canMeasureWater(3,5,4);
     auto end = chrono::steady_clock::now();
     cout << "\n\n... time taken: " << chrono::duration_cast<chrono::milliseconds>(end-start).count() << "ms";
+    
     return 0;
 }
