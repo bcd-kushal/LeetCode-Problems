@@ -7,7 +7,7 @@ impl Solution {
 
         for (index, num) in nums.iter().enumerate() {
             result[index] = nums[index];
-            result[index+original_arr_length] = nums[index];
+            result[index + original_arr_length] = nums[index];
         }
 
         result
