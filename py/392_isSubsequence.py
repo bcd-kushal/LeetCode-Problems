@@ -10,7 +10,7 @@ def isSubsequence(s:str, t:str)->bool:
         if t[j]==s[i]:
             i+=1
 
-    if i<len(s) and i==len(s):
+    if i < len(s) and i==len(s):
         return True
     
     return False
