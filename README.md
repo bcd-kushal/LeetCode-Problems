@@ -5,7 +5,7 @@
 <img style="height:26px" src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" title="TS"/> &nbsp;
 <img style="height:24px" src="https://github.com/bcd-kushal/LeetCode-Problems/assets/96081625/520d62c1-65ba-415b-827d-b1fe7bb10932" title="Rust" /> &nbsp;
 
-This repository contains LeetCode question solutions in `C++`, `Python`, `TypeScript` and `Rust` 
+This repository contains LeetCode question solutions in `C++`, `Python`, `TypeScript` and others
  
 <hr>
 
