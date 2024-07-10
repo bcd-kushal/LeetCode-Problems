@@ -49,7 +49,6 @@ private:
     }
     
     bool wordFound(pair<int,int> coord, int word_index, int word_size, vector<vector<char>> &board, string word, int rows, int cols) {
-        
         pair<bool,vector<pair<int,int>>> x;
         
         while(word_index < word_size) {
