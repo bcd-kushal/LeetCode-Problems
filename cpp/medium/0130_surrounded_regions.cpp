@@ -44,10 +44,9 @@ class Checkers {
             vector<pair<int,int>> Visited;
 
             for(int i=1;i<rows-1;i++)
-                for(int j=1;j<cols-1;j++) {
+                for(int j=1;j<cols-1;j++) 
                     if(board[i][j]=='O')
                         bfs(board,Visited,Q,rows,cols,i,j);
-                }
         }
 };
 
