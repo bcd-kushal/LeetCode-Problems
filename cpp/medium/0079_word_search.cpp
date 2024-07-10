@@ -62,7 +62,7 @@ private:
                 vector<pair<int,int>> authentic_coords = x.second;
         }
     }
-
+ 
 public:
     bool exist(vector<vector<char>>& board, string word) {
         // initialization -----------
