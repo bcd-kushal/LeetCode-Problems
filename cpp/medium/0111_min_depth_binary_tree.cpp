@@ -50,7 +50,6 @@ public:
             min_nodes_depth = min(min_nodes_depth,local_total_nodes);
             local_total_nodes = 0;
             
-            
             ptr = S.top();
             
             while(ptr->right && checkNotVisited(Visited,ptr->right)){
