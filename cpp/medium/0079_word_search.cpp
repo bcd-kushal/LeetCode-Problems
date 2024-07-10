@@ -6,7 +6,7 @@ private:
     pair<bool,vector<pair<int,int>>> adjacentCellsHasTargetElement(vector<vector<char>> &board, char target, int i, int j, int m, int n) {
         bool doesExist = false;
         vector<pair<int,int>> coords;
-        
+         
         // top ---------------------------------\
         if(i-1>0 && j-1>0 && board[i-1][j-1]==target){
             doesExist |= true;
