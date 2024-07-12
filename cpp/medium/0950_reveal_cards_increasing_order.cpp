@@ -48,7 +48,6 @@ class Cards {
         }
 };
 
-
 int main() {
     vector<int> deck = {17,13,11,2,3,5,7};
     Cards cards;
