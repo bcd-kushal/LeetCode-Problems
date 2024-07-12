@@ -5,6 +5,7 @@ class MyStack {
     private:
         queue<int> q1;
         deque<int> q2;
+
     public:
         MyStack() {}
         int top() { return q1.empty() ? 0 : q1.front(); }
