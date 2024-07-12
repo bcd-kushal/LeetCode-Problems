@@ -34,7 +34,6 @@ private:
                         if(tempx == row-1)return true;
                         Visited[tempx][tempy] = 1;
                     }
-                
             }
         }
         
