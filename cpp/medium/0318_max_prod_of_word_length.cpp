@@ -23,7 +23,6 @@ private:
     
     int letterDistance(string a, string b) { return a.size()*b.size(); }
     
-    
 public:
     int maxProduct(vector<string>& words) {
         int max_prod = INT_MIN;
@@ -40,4 +39,3 @@ public:
         return max_prod;
     }
 };
-
