@@ -8,7 +8,7 @@ private:
         for(int i = 0;i < mid;i++)
             grid[cells[i][0]-1][cells[i][1]-1] = 1;
         
-        vector<vector<int>>Visited(row,vector<int>(col));
+        vector<vector<int>>Visited(row,vector<int>(col)); 
         queue<pair<int,int>>Q;
         
         for(int i = 0;i < col;i++)
