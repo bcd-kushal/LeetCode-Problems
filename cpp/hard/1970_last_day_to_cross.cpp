@@ -2,7 +2,7 @@
 using namespace std;
 
 class LastDay {
-private:
+    private:
     bool f(int row,int col,int mid,vector<vector<int>> &cells){
         vector<vector<int>>grid(row,vector<int>(col));
         for(int i = 0;i < mid;i++)
