@@ -3,8 +3,6 @@
 using namespace std;
 
 class Solution {
-private:
-
 public:
     pair<int,vector<int>> checkIds(vector<int> a, vector<int> b) {
         if(a[0] == b[0]) {
