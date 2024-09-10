@@ -22,7 +22,7 @@ public:
 
         int rows = matrix.size(),
             cols = matrix[0].size();
-        int curr_row = 0, 
+        int curr_row = 0,
             curr_col = 0;
 
         heap.push(make_pair(matrix[curr_row][curr_col], make_pair(curr_row,curr_col)));
