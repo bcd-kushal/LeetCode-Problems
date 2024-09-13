@@ -1,4 +1,5 @@
 #include <vector>
+#include <limits.h>
 using namespace std;
 
 struct ListNode {
