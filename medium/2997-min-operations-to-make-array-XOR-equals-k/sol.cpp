@@ -10,7 +10,7 @@ private:
         for(int i=0; i<bits.size(); i++)
             arrBits ^= bits[i]%2;
 
-        if((k%2==0 && arrBits==1) || (k%2==1 && arrBits==0)) 
+        if((k%2==0 && arrBits==1) || (k%2==1 && arrBits==0))
             return 1;
         return 0;
     }
