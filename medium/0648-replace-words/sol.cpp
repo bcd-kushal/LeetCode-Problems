@@ -6,13 +6,9 @@ using namespace std;
 class Solution {
 public:
     string replaceWords(vector<string>& dictionary, string sentence) {
-        unordered_set<string> bag;
-        for(int i=0;i<dictionary.size();i+=1)
-            bag.insert(dictionary[i]);
-        
+        unordered_set<string> bag(dictionary.begin(),dictionary.end());
+        string temp = "", replaced = "";
         sentence += " ";
-        string temp = "", 
-               replaced = "";
                
         for(int i=0;i<sentence.size();i+=1) {
             if(sentence[i]==' ') {
